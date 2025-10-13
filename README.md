@@ -8,23 +8,37 @@ Prompts the user for multiple word types:
 
 Dynamically generates a story based on user input.
 
-## Approach / Methodology
+## Approach and Implementation
+- **Main Method:**  
+  The `main` method drives the program, prompting the user and assembling the story.
 
-1. Input Handling
-- A dedicated method getUserInput is used to prompt the user and collect input.
-- This ensures code is reusable and clean.
+- **CamelCase Usage:**  
+  All variable and method names use camelCase as per Java conventions and AP guidelines.
 
-2. Story Generation
-- generateStory method constructs the story using string concatenation.=
-- Each word entered by the user is inserted into a predefined story template.
-- 
-3. Program Flow
-- The main method orchestrates the program:
-- Prompt user for 7 words (3 nouns, 2 adjectives, 2 verbs)
-- Pass words to generateStory
-- Display the completed story
+- **Comments:**  
+  Each method is documented with comments explaining its role in the algorithm.
 
-4. Design Considerations
-- Simplicity: Easy-to-read code structure for beginners.
-- Reusability: Methods for input and story generation can be extended for multiple stories.
-- User Experience: Clear prompts for each type of word.
+### Mad Lib Algorithm
+
+1. **Template:**  
+   There is a fixed story structure with placeholders for user-provided nouns, adjectives, and verbs.
+
+2. **User Input and Suggestions:**  
+   - Before each input, the user is prompted for a specific part of speech (noun, adjective, verb).
+   - Each prompt provides a random suggestion chosen from a predefined array.
+
+3. **String Methods:**  
+   - `nextLine()`, array indexing, string concatenation
+
+4. **Parsing and Replacement:**  
+   - The story is created by concatenating the user inputs in the correct order.
+   - Only basic string operations were used to implment this
+
+5. **User Experience:**  
+   - Clear prompts and suggestions keep the user on track.
+   - When all words are entered, the final story is printed to the console.
+     
+## Screenshots
+<img width="1274" height="183" alt="image" src="https://github.com/user-attachments/assets/5dd4c1c1-517f-4329-ab07-5a10aae87dd0" />
+
+  
